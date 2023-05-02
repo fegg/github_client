@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 
 class CacheObject {
-  late int timestamp;
+  late num timestamp;
   Response response;
 
   CacheObject(this.response) {

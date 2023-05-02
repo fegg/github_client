@@ -48,7 +48,7 @@ class Global {
       ..maxAge = 3600
       ..maxCount = 100;
   }
-  
+
   static saveProfile() {
     return _prefs.setString("profile", jsonEncode(profile.toJson()));
   }
