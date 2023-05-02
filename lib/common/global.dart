@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:github_client/models/cacheConfig.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../models/profile.dart';
+import '../models/index.dart';
+import 'net_cache.dart';
 
 const _themes = <MaterialColor>[
   Colors.blue,
@@ -53,5 +53,3 @@ class Global {
     return _prefs.setString("profile", jsonEncode(profile.toJson()));
   }
 }
-
-class NetCache {}
