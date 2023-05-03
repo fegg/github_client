@@ -3,7 +3,7 @@ import 'package:github_client/common/index.dart';
 import 'package:github_client/states/profile_change_notifier.dart';
 
 class ThemeModel extends ProfileChangeNotifier {
-  ColorSwatch get theme =>
+  MaterialColor get theme =>
       Global.themes.firstWhere((element) => element.value == profile.theme,
           orElse: () => Colors.blue);
 

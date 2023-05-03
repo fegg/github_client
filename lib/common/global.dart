@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:github_client/services/git_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/index.dart';
@@ -42,6 +43,8 @@ class Global {
     } else {
       profile = Profile()..theme = 0;
     }
+
+    GitService.init();
 
     profile.cache = profile.cache ?? CacheConfig()
       ..enable = true
