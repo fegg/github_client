@@ -27,7 +27,6 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
               primarySwatch: themeModel.theme,
             ),
-            onGenerateTitle: (context) => GmLocalizations.of(),
           );
         },
       ),
