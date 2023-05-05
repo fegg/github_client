@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 
 import '../generated/intl/messages_all.dart';
 
+
 class DemoLocalizations {
   // 加载 intl 文件
   static Future<DemoLocalizations> load(Locale locale) {
